@@ -1,0 +1,74 @@
+  <!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="jquery-1.11.0.min.js"></script>
+    <script>
+    </script>
+    <title>Digital Clock</title>
+    <style>
+    html,body{
+        position:relative;
+        background-color:#ccddcc;
+        margin:0px;
+        padding:0px;
+        top:0px;
+        height:100%;
+    }
+      #mainBg {
+          display:-webkit-box;
+          position:relative;
+          left:10%;
+          background-color: #abcbaa;
+          width: 80%;
+          height: 100%;
+      }
+      #mainBlock {
+          display:-webkit-box;
+          margin:20px;
+          padding:40px;
+          background-color:#aabbcc;
+          -webkit-box-flex: 1.0;
+          -webkit-box-pack:center;
+          -webkit-box-align:center;
+          height:50%;
+      }
+      #mainSide {
+          width:30px;
+          height:100%;
+          background-color:#334455;
+          box-sizing:border-box;
+      }
+
+      #c {
+          font: bold 24pt sans;
+          background: #d0ddfa;
+          margin:0px 0px 20px 0px;
+          padding: 10px;
+          border: solid black 2px;
+          border-radius: 20px;
+          height: 100px;
+      }
+      #insertPage {
+          margin: 20px 0px 0px 0px;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainBg">
+      <div id="mainBlock">
+        <div>
+          <h1>Digital Clock</h1>
+          <div>
+            <span id="c">g</span>
+            <script type="text/javascript" src="page.js"></script>
+          </div>
+          <div>
+            <input id="insertPage" style="position:relative;float:left" type="button" value="insert page">
+          </div>
+        </div>
+        </div>
+      <div id="mainSide"></div>
+    </div>
+  </body>
+</html>

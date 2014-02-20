@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+    "name": "testing extensions",
+    "description": "This is a testing extension that could be modified.",
+    "version": "0.1",
+  "background": {
+    "page": "main.html"
+    },
+  "content_scripts":[{
+    "js":["jquery-1.11.0.min.js","content.js"],
+    "matches":[ "\u003Call_urls\u003E" ],
+    "run_at":"document_end"
+  }],
+  "browser_action": {
+    "default_icon": "icon-16.png"
+  }
+}
